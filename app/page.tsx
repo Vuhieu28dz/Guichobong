@@ -154,7 +154,7 @@ export default function LetterPage() {
 
             <div className="flex items-center justify-between pt-6">
               <span className="text-base md:text-xl text-rose-400 font-sans italic">
-                (bấm ✕ để cất đi những lời cuối!)
+                (bấm ✕ để cất đi những lời cuối,hihih con này em thích nì)
               </span>
               <img
                 src="/imgthokhoc.jpg"
