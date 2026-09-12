@@ -171,12 +171,6 @@ export default function LetterPage() {
   // nếu không trình duyệt sẽ chặn nhạc tự động.
   const burstFlowersOnce = () => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    try {
-      if (window.localStorage.getItem(FLOWERS_STORAGE_KEY)) return;
-      window.localStorage.setItem(FLOWERS_STORAGE_KEY, "1");
-    } catch {
-      // Trình duyệt chặn localStorage (tab ẩn danh) — vẫn cho xem hoa.
-    }
     setShowFlowers(true);
     flowerTimerRef.current = window.setTimeout(
       () => setShowFlowers(false),
